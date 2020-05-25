@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  api-1:
+    image: demo-spring-boot-app
+    ports:
+      - 81:8080
+    deploy:
+      replicas: 2
+  api-2:
+    image: demo-spring-boot-app
+    ports:
+      - 82:8080
+    deploy:
+      replicas: 3
